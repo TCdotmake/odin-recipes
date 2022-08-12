@@ -1,0 +1,27 @@
+ul li{
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: none;
+}
+
+body{
+    background: #febfca;
+}
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoWrapper{
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    clip-path: circle(50%);
+}
+
+.title{
+    font-family: 'Limelight', cursive;
+    color:#fff;
+}
