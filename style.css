@@ -69,6 +69,7 @@ a {
 }
 
 .linkImgWrapper {
+  position: relative;
   width: 140px;
   height: 140px;
   clip-path: polygon(
@@ -83,7 +84,35 @@ a {
   );
 }
 
-.linkImg {
+.linkImg,
+.description {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 200px;
   height: auto;
+}
+
+.description {
+  background: #33333380;
+  color: #fff;
+  width: 140px;
+  height: 100%;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.description span {
+  font-size: 1.2rem;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+.linkImgWrapper:hover .description {
+  visibility: visible;
+}
+
+.linkImgWrapper:hover .linkImg {
+  transform: scale(1.1);
 }
