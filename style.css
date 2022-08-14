@@ -1,4 +1,7 @@
-ul li, p {
+ul,
+li,
+div,
+p {
   margin: 0;
   padding: 0;
   text-indent: 0;
@@ -29,10 +32,6 @@ a {
   flex-direction: column;
 }
 
-#logoSection{
-
-}
-
 #logoWrapper {
   width: 260px;
   height: 260px;
@@ -42,33 +41,49 @@ a {
 }
 
 .title {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
   color: #fff;
   font-size: 2.8rem;
 }
 
 .menu {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .menuItems {
   display: inline;
 }
 
-
 #semiCir {
   display: inline-block;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
 }
 
-#app{
+#app {
   height: 100vh;
 }
 
-.menuLinkWrapper{
-  width: 100px;
-  height: 100px;
-  clip-path: circle(50%);
+.linkImgWrapper {
+  width: 140px;
+  height: 140px;
+  clip-path: polygon(
+    0 10%,
+    10% 0,
+    90% 0,
+    100% 10%,
+    100% 90%,
+    90% 100%,
+    10% 100%,
+    0 90%
+  );
+}
+
+.linkImg {
+  width: 200px;
+  height: auto;
 }

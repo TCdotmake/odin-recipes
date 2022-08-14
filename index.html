@@ -4,33 +4,58 @@
     <meta charset="UTF-8" />
     <title>Ruta's Kitchen</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Limelight&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Limelight&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="app" class="centered col">
       <div class="centered col">
         <div id="title" class="title"></div>
-         <div id="logoWrapper" class="centered">
-         <img src="./images/logo.png" alt="Bunny Chef Logo" />
+        <div id="logoWrapper" class="centered">
+          <img src="./images/logo.png" alt="Bunny Chef Logo" />
         </div>
         <div>
           <ul class="menu">
             <li class="menuItems">
-              <a href="./recipes/beefPho.html">Beef Pho</a>
+              <a href="./recipes/beefPho.html">
+                <div class="linkImgWrapper">
+                  <img
+                    src="./images/beefPho.jpeg"
+                    alt="click for beef pho recipe"
+                    class="linkImg"
+                  />
+                </div>
+              </a>
             </li>
             <li class="menuItems">
-              <a href="./recipes/meatLoaf.html">Easy Meatloaf</a>
+              <a href="./recipes/meatLoaf.html">
+                <div class="linkImgWrapper">
+                  <img
+                    src="./images/meatloaf.jpg"
+                    alt="click for meat loaf recipe"
+                    class="linkImg"
+                  />
+                </div>
+              </a>
             </li>
             <li class="menuItems">
-              <a href="./recipes/oatmealCookies.html">Healthy Oatmeal Cookies</a>
+              <a href="./recipes/oatmealCookies.html">
+                <div class="linkImgWrapper">
+                  <img
+                    src="./images/oatmealCookies.jpg"
+                    alt="click for oatmeal cookies recipe"
+                    class="linkImg"
+                  />
+                </div>
+              </a>
             </li>
           </ul>
         </div>
-    </div>
-
-      
+      </div>
     </div>
     <script>
       function semiCirText({ txt, radius, parentID }) {
