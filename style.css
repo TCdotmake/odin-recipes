@@ -1,4 +1,4 @@
-ul li {
+ul li, p {
   margin: 0;
   padding: 0;
   text-indent: 0;
@@ -29,16 +29,22 @@ a {
   flex-direction: column;
 }
 
+#logoSection{
+
+}
+
 #logoWrapper {
-  width: 300px;
-  height: 300px;
+  width: 260px;
+  height: 260px;
   background: #fff;
   clip-path: circle(50%);
+  margin-top: 40px;
 }
 
 .title {
   font-family: "Limelight", cursive;
   color: #fff;
+  font-size: 2rem;
 }
 
 .menu {
@@ -49,12 +55,9 @@ a {
   display: inline;
 }
 
-span {
-  position: absolute;
-  transform-origin: 0 80px;
-}
 
 #semiCir {
   display: inline-block;
-  margin-bottom: 150px;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
 }

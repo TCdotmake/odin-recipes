@@ -4,26 +4,14 @@
     <meta charset="UTF-8" />
     <title>Ruta's Kitchen</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Limelight&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="centered col">
-      <h1 id="title" class="title">Ruta's Kitchen</h1>
-      <p
-        style="
-          position: absolute;
-          height: 80px;
-          transform: rotate(0 deg);
-          transform-origin: 0 100%;
-        "
-      >
-        n
-      </p>
+      <div id="title" class="title"></div>
+  
       <div id="logoWrapper" class="centered">
         <img src="./images/logo.png" alt="Bunny Chef Logo" />
       </div>
@@ -40,7 +28,7 @@
           </li>
         </ul>
       </div>
-      <div id="semiCir"></div>
+      
     </div>
     <script>
       function semiCirText({ txt, radius, parentID }) {
@@ -49,9 +37,9 @@
         console.log("parentID", parentID);
         txt = txt.split("");
         const parentNode = document.getElementById(parentID);
-        let deg = 180 / txt.length;
+        let deg = 120 / txt.length;
 
-        let origin = 270;
+        let origin = 300;
 
         for (let i = 0; i < txt.length; i++) {
           let style = `position: absolute;
@@ -66,12 +54,12 @@
           parentNode.insertAdjacentElement("beforeend", newNode);
         }
       }
-      const semiTitle = {
+      const title = {
         txt: "Ruta's Kitchen",
-        radius: `80px`,
-        parentID: `semiCir`,
+        radius: `180px`,
+        parentID: `title`,
       };
-      semiCirText(semiTitle);
+      semiCirText(title);
     </script>
   </body>
 </html>
