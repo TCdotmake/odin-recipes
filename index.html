@@ -9,25 +9,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Limelight&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="centered col">
-      <div id="title" class="title"></div>
-  
-      <div id="logoWrapper" class="centered">
-        <img src="./images/logo.png" alt="Bunny Chef Logo" />
-      </div>
-      <div>
-        <ul class="menu">
-          <li class="menuItems">
-            <a href="./recipes/beefPho.html">Beef Pho</a>
-          </li>
-          <li class="menuItems">
-            <a href="./recipes/meatLoaf.html">Easy Meatloaf</a>
-          </li>
-          <li class="menuItems">
-            <a href="./recipes/oatmealCookies.html">Healthy Oatmeal Cookies</a>
-          </li>
-        </ul>
-      </div>
+    <div id="app" class="centered col">
+      <div class="centered col">
+        <div id="title" class="title"></div>
+         <div id="logoWrapper" class="centered">
+         <img src="./images/logo.png" alt="Bunny Chef Logo" />
+        </div>
+        <div>
+          <ul class="menu">
+            <li class="menuItems">
+              <a href="./recipes/beefPho.html">Beef Pho</a>
+            </li>
+            <li class="menuItems">
+              <a href="./recipes/meatLoaf.html">Easy Meatloaf</a>
+            </li>
+            <li class="menuItems">
+              <a href="./recipes/oatmealCookies.html">Healthy Oatmeal Cookies</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
       
     </div>
     <script>
@@ -37,9 +39,9 @@
         console.log("parentID", parentID);
         txt = txt.split("");
         const parentNode = document.getElementById(parentID);
-        let deg = 120 / txt.length;
+        let deg = 160 / txt.length;
 
-        let origin = 300;
+        let origin = 280;
 
         for (let i = 0; i < txt.length; i++) {
           let style = `position: absolute;
